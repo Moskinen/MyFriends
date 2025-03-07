@@ -34,4 +34,13 @@ public class Person {
     public String getEmail() {
         return this.email;
     }
+
+    //To String metode
+    @Override
+    public String toString(){
+        return
+                ("Name: " + name + "\n" +
+                        "Number: " + phone + "\n" +
+                        "Email: " + email + "\n");
+    }
 }
