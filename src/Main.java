@@ -42,7 +42,7 @@ public class Main {
                 System.out.println("8");
                 break;
             case 9:
-                System.out.println("9");
+                System.exit(0);
                 break;
             default:
                 System.out.println("Ugyldigt Valg! Prøv igen");
@@ -73,8 +73,4 @@ public class Main {
                 "6. Load list\n" +
                 "9. Quit\n";
     }
-
-
-
-
 }
