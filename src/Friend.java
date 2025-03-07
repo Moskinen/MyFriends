@@ -12,6 +12,7 @@ public class Friend extends Person {
         this.email = email;
     }
 
+    //Getters
     public String getName() {
         return this.name;
     }
