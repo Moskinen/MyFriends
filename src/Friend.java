@@ -40,6 +40,6 @@ public class Friend extends Person {
 
     //toString
     public String toString(){
-        return "Name: " + name + "\nPhone: " + phone + "\nEmail: " + email;
+        return "Name: " + name + "\nNumber: " + phone + "\nEmail: " + email;
     }
 }
