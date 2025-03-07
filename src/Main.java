@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -47,6 +48,13 @@ public class Main {
                 System.out.println("Ugyldigt Valg! Prøv igen");
         }
         scanner.close();
+    }
+
+    ArrayList<Person> personList = new ArrayList<Person>();
+
+
+    public void addPerson(Person person) {
+        personList.add(person);
     }
 
 
