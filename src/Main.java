@@ -53,8 +53,20 @@ public class Main {
     ArrayList<Person> personList = new ArrayList<Person>();
 
 
+
     public void addPerson(Person person) {
         personList.add(person);
+    }
+
+    public void enterNewFriend(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is the name of your friend?");
+        String friendsName = scanner.nextLine();
+        System.out.println("What is the phone number of your friend?");
+        String friendsPhone = scanner.nextLine();
+        System.out.println("What is the Email of your friend?");
+        String friendsEmail = scanner.nextLine();
+        personList.add(new Friend(friendsName, friendsPhone, friendsEmail));
     }
 
 
