@@ -85,4 +85,13 @@ public class Main {
                 "6. Load list\n" +
                 "9. Quit\n";
     }
+
+    public void displayFriendList() {
+        System.out.printf("%-15s%-15s%-15s\n", "Name", "Number", "Email");
+
+        for(Person personList : personList){
+            System.out.println(personList);
+        }
+    }
+
 }
