@@ -13,7 +13,7 @@ public class FileHub {
         try {
             File friendList = new File("friendList.txt");
             if (friendList.createNewFile()) {
-                System.out.println("File created: " + friendList.getName());
+                System.out.println("File created: " + friendList.getList());
             } else {
                 System.out.println("File already exists.");
             }
