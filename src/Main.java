@@ -20,14 +20,13 @@ public class Main {
 
         switch (choice) {
             case 1:
-                System.out.println("1");
+                displayFriendList();
                 break;
             case 2:
-                Main x = new Main();
-                x.enterNewFriend();
+                enterNewFriend();
                 break;
             case 3:
-                System.out.println("3");
+                enterNewFamilyMember();
                 break;
             case 4:
                 System.out.println("4");
@@ -48,7 +47,7 @@ public class Main {
                 System.exit(0);
                 break;
             default:
-                System.out.println("Ugyldigt Valg! Prøv igen");
+                System.out.println("Ugyldigt Valg! Prøv Igen");
         }
         scanner.close();
     }
@@ -102,7 +101,7 @@ public class Main {
                 "9. Quit\n";
     }
 
-    public void displayFriendList() {
+    public static void displayFriendList() {
         System.out.printf("%-15s%-15s%-15s\n", "Name", "Number", "Email");
 
         for(Person personList : personList){
