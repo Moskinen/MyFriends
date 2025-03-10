@@ -72,6 +72,19 @@ public class Main {
         personList.add(new Friend(friendsName, friendsPhone, friendsEmail));
     }
 
+    public static void enterNewFamilyMember(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is the name of your family member?");
+        String familyMemberName = scanner.nextLine();
+        System.out.println("What is the phone number of your family member?");
+        String familyMemberPhone = scanner.nextLine();
+        System.out.println("What is the Email of your family member?");
+        String familyMemberEmail = scanner.nextLine();
+        System.out.println("What is your relation to this family member?");
+        String familyMemberRelation = scanner.nextLine();
+        personList.add(new FamilyMember(familyMemberName, familyMemberPhone, familyMemberEmail, familyMemberRelation));
+    }
+
 
     public static String menuHeader(){
         return "Menu";
