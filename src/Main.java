@@ -28,7 +28,7 @@ public class Main {
                     enterNewFamilyMember();
                     break;
                 case 4:
-                    System.out.println("4");
+                    deletePerson();
                     break;
                 case 5:
                     System.out.println("5");
@@ -80,6 +80,18 @@ public class Main {
         System.out.println("What is your relation to this family member?");
         String familyMemberRelation = scanner.nextLine();
         personList.add(new FamilyMember(familyMemberName, familyMemberPhone, familyMemberEmail, familyMemberRelation));
+    }
+
+    public static void deletePerson(){
+        Scanner scanner = new Scanner (System.in);
+        System.out.println(personList);
+        System.out.println("Enter the name of the person you want to delete");
+        String removeName = scanner.nextLine();
+        if (personList.remove(removeName)) {
+            System.out.println("Person \"" + removeName + "\" removed successfully.");
+        } else {
+            System.out.println("Person \"" + removeName + "\" not found in the list.");
+        }
     }
 
 
