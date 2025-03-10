@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    //Attr
+    public ArrayList arraylist;
+
     public static void main(String[] args) {
         run();
     }
@@ -53,6 +56,9 @@ public class Main {
 
     static ArrayList<Person> personList = new ArrayList<Person>();
 
+    public ArrayList<Person> getList(){
+        return this.arraylist;
+    }
 
     public void addPerson(Person person) {
         personList.add(person);
@@ -114,7 +120,7 @@ public class Main {
     }
 
     public static void displayFriendList() {
-        System.out.printf("%-15s%-15s%-15s\n", "Name", "Number", "Email");
+        System.out.printf("%-15s%-20s%-20s\n", "Name", "Number", "Email");
 
         for (Person personList : personList) {
             System.out.println(personList);
