@@ -23,7 +23,8 @@ public class Main {
                 System.out.println("1");
                 break;
             case 2:
-                enterNewFriend();
+                Main x = new Main();
+                x.enterNewFriend();
                 break;
             case 3:
                 System.out.println("3");
@@ -52,8 +53,8 @@ public class Main {
         scanner.close();
     }
 
+    static ArrayList<Person> personList = new ArrayList<Person>();
 
-   static ArrayList<Person> personList = new ArrayList<>();
 
 
     public void addPerson(Person person) {
