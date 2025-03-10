@@ -7,9 +7,6 @@ public class Friend extends Person {
     // Constructor
     public Friend(String name, String phone, String email) {
         super(name, phone, email);
-        this.name = name;
-        this.phone = phone;
-        this.email = email;
     }
 
     //Getters
