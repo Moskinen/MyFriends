@@ -9,9 +9,6 @@ public class FamilyMember extends Person {
     //Constructor
     public FamilyMember (String name, String phone, String email, String relation){
         super(name, phone, email);
-        this.name = name;
-        this.phone = phone;
-        this.email = email;
         this.relation = relation;
     }
 
